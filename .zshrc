@@ -93,3 +93,6 @@ esac
 zinit light Aloxaf/fzf-tab
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source <(fzf --zsh)
+
+. "$HOME/.cargo/env"
+fpath+=${ZDOTDIR:-~}/.zsh_functions
