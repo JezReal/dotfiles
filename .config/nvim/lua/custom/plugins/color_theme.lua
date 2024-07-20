@@ -1,16 +1,7 @@
 return {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-        require("tokyonight").setup({
-            transparent = false,
-        })
-    end,
+    "catppuccin/nvim", name = "catppuccin", priority = 1000,
 
-    -- optionally set the colorscheme within lazy config
     init = function()
-        vim.cmd("colorscheme tokyonight-moon")
-        vim.cmd("hi ColorColumn ctermbg=lightgrey guibg=lightgrey")
-    end,
+        vim.cmd("colorscheme catppuccin-mocha")
+    end
 }
