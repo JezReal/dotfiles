@@ -34,6 +34,10 @@ zinit light zsh-users/zsh-autosuggestions
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
 
+zinit light Aloxaf/fzf-tab
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
+
 # Load completions
 autoload -Uz compinit && compinit
 
@@ -63,7 +67,6 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
-zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 alias ls="ls --color"
 alias v="nvim"
@@ -83,16 +86,12 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 # pnpm
-export PNPM_HOME="/home/jez/.local/share/pnpm"
+export PNPM_HOME="~/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-
-zinit light Aloxaf/fzf-tab
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source <(fzf --zsh)
 
 . "$HOME/.cargo/env"
 fpath+=${ZDOTDIR:-~}/.zsh_functions
