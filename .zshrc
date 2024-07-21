@@ -34,12 +34,12 @@ zinit light zsh-users/zsh-autosuggestions
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
 
+# Load completions
+autoload -Uz compinit && compinit
+
 zinit light Aloxaf/fzf-tab
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source <(fzf --zsh)
-
-# Load completions
-autoload -Uz compinit && compinit
 
 zinit cdreplay -q
 
@@ -68,8 +68,9 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 
-alias ls="ls --color"
-alias v="nvim"
+alias ls='ls --color'
+alias v='nvim'
+alias fo='nvim $(fzf --preview="bat --color=aways {}")'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
