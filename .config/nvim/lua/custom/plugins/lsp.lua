@@ -40,7 +40,6 @@ return {
 						analyses = {
 							unusedparams = true,
 						},
-						usePlaceholders = true,
 						completeUnimported = true,
 						staticcheck = true,
 						gofumpt = true,
