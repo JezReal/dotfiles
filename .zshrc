@@ -80,6 +80,7 @@ export PATH=$PATH:$HOME/scripts
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/opt/nvim-linux64/bin
+export PATH=$PATH:$HOME/go/bin
 
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
