@@ -19,7 +19,8 @@ return {
 					"volar",
 					"svelte",
 					"astro",
-                    "tailwindcss"
+                    "tailwindcss",
+                    "htmx"
 				},
 			})
 		end,
@@ -92,6 +93,10 @@ return {
 			})
 
             lspconfig.tailwindcss.setup({
+                capabilities = capabilities
+            })
+
+            lspconfig.htmx.setup({
                 capabilities = capabilities
             })
 
