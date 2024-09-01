@@ -2,4 +2,3 @@
 
 mv ~/.tmux.conf.killed ~/.tmux.conf
 tmux source ~/.tmux.conf
-tmux a
