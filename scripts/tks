@@ -2,4 +2,3 @@
 
 tmux kill-server
 mv ~/.tmux.conf ~/.tmux.conf.killed
-tmux
