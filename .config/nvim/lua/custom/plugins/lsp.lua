@@ -12,15 +12,17 @@ return {
 				ensure_installed = {
 					"lua_ls",
 					"gopls",
-					"tsserver",
+					"ts_ls",
 					"html",
 					"emmet_language_server",
 					"templ",
 					"volar",
 					"svelte",
 					"astro",
-                    "tailwindcss",
-                    "htmx"
+					"tailwindcss",
+					"htmx",
+					"csharp_ls",
+					"solargraph",
 				},
 			})
 		end,
@@ -34,6 +36,7 @@ return {
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
+
 			lspconfig.gopls.setup({
 				capabilities = capabilities,
 				settings = {
@@ -49,7 +52,7 @@ return {
 				filetypes = { "go", "gomod", "gowork", "gotmpl", "templ" },
 			})
 
-			lspconfig.tsserver.setup({
+			lspconfig.ts_ls.setup({
 				capabilities = capabilities,
 				init_options = {
 					preferences = {
@@ -92,11 +95,19 @@ return {
 				capabilities = capabilities,
 			})
 
-            lspconfig.tailwindcss.setup({
-                capabilities = capabilities
-            })
+			lspconfig.tailwindcss.setup({
+				capabilities = capabilities,
+			})
 
-            lspconfig.htmx.setup({
+			lspconfig.htmx.setup({
+				capabilities = capabilities,
+			})
+
+			lspconfig.csharp_ls.setup({
+				capabilities = capabilities,
+			})
+
+            lspconfig.solargraph.setup({
                 capabilities = capabilities
             })
 
