@@ -82,6 +82,7 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/opt/nvim-linux64/bin
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/
 
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
