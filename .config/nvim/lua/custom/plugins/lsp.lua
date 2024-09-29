@@ -23,6 +23,8 @@ return {
 					"htmx",
 					"csharp_ls",
 					"solargraph",
+					"cssls",
+                    "spectral"
 				},
 			})
 		end,
@@ -108,6 +110,14 @@ return {
 			})
 
             lspconfig.solargraph.setup({
+                capabilities = capabilities
+            })
+
+            lspconfig.cssls.setup({
+                capabilities = capabilities
+            })
+
+            lspconfig.spectral.setup({
                 capabilities = capabilities
             })
 
