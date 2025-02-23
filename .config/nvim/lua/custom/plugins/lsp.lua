@@ -24,7 +24,7 @@ return {
 					"csharp_ls",
 					"solargraph",
 					"cssls",
-                    "spectral"
+					"spectral",
 				},
 			})
 		end,
@@ -65,7 +65,7 @@ return {
 
 			lspconfig.html.setup({
 				capabilities = capabilities,
-				filetypes = { "html", "templ", "htmldjango" },
+				filetypes = { "html", "templ", "htmldjango"},
 			})
 			lspconfig.templ.setup({
 				vim.filetype.add({ extension = { templ = "templ" } }),
@@ -109,17 +109,21 @@ return {
 				capabilities = capabilities,
 			})
 
-            lspconfig.solargraph.setup({
-                capabilities = capabilities
-            })
+			lspconfig.solargraph.setup({
+				capabilities = capabilities,
+			})
 
-            lspconfig.cssls.setup({
-                capabilities = capabilities
-            })
+			lspconfig.cssls.setup({
+				capabilities = capabilities,
+			})
 
-            lspconfig.spectral.setup({
-                capabilities = capabilities
-            })
+			lspconfig.spectral.setup({
+				capabilities = capabilities,
+			})
+
+			lspconfig.prismals.setup({
+				capabilities = capabilities,
+			})
 
 			-- keymaps
 			vim.keymap.set("n", "gd", function()
