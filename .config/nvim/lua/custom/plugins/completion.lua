@@ -23,6 +23,8 @@ return {
             require("luasnip.loaders.from_vscode").lazy_load()
             luasnip.filetype_extend("templ", { "html" })
             luasnip.filetype_extend("htmldjango", { "html" })
+            luasnip.filetype_extend("typescriptreact", { "html" })
+            luasnip.filetype_extend("javascriptreact", { "html" })
             luasnip.filetype_extend("vue", { "html" })
             luasnip.filetype_extend("svelte", { "html" })
 
