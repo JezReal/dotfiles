@@ -84,10 +84,10 @@ export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 # pnpm
 export PNPM_HOME="~/.local/share/pnpm"
