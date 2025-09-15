@@ -21,8 +21,6 @@ return {
 					"astro",
 					"tailwindcss",
 					"htmx",
-					"csharp_ls",
-					"solargraph",
 					"cssls",
 					"spectral",
 				},
@@ -102,14 +100,6 @@ return {
 			})
 
 			lspconfig.htmx.setup({
-				capabilities = capabilities,
-			})
-
-			lspconfig.csharp_ls.setup({
-				capabilities = capabilities,
-			})
-
-			lspconfig.solargraph.setup({
 				capabilities = capabilities,
 			})
 
