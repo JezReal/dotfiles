@@ -10,5 +10,9 @@ return {
             "<cmd>Trouble diagnostics toggle<cr>",
             desc = "Diagnostics (Trouble)",
         },
+        {
+            "<leader>tr",
+            "<cmd>Trouble<cr>",
+        },
     },
 }
