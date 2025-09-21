@@ -12,12 +12,12 @@ return {
 				defaults = {
 					file_icons = false,
 				},
-        keymap = {
-          builtin = {
-            ['<C-u>'] = 'preview-page-up',
-            ['<C-d>'] = 'preview-page-down'
-          }
-        }
+				keymap = {
+					builtin = {
+						["<C-u>"] = "preview-page-up",
+						["<C-d>"] = "preview-page-down",
+					},
+				},
 			})
 
 			vim.keymap.set("n", "<leader>fz", function()
