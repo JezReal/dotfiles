@@ -18,6 +18,11 @@ return {
 						["<C-d>"] = "preview-page-down",
 					},
 				},
+                actions = {
+                    files = {
+                        ["ctrl-g"] = FzfLua.actions.toggle_ignore
+                    }
+                }
 			})
 
 			vim.keymap.set("n", "<leader>fz", function()
